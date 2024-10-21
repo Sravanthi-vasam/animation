@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .e{
+            display: flex;
+            justify-content: center;
+        }
+        .e1,.e2,.e3{
+            width: 30px ;
+            height: 30px;
+            background-color: blue;
+            border-radius: 20px;
+            margin-left:  30px;
+            margin-top: 20%;
+            animation: move 5s infinite;
+        }
+        .e1{
+            animation-delay: 2s;
+        }
+        .e2{
+            animation-delay: 3s;
+        }
+        .e3{
+            animation-delay: 4s;
+        }
+        .a{
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .a1,.a2,.a3{
+            width: 15px ;
+            height: 15px;
+            background-color: rgb(64, 137, 28);
+            border-radius: 20px;
+            animation: fade 3s infinite;
+        }
+        .a1{
+            animation-delay: 1s;
+        }
+        .a2{
+            animation-delay: 2s;
+        }
+        .a3{
+            animation-delay: 3s;
+        }
+
+        @keyframes move {
+            0%{
+                transform: translate(0px,-100px);
+            }
+            50%{
+                transform: translate(0px,0px);
+            }
+            100%{
+                transform: translate(0px,-100px);
+            }
+        }
+
+        @keyframes fade {
+            0%{
+                transform: scale(0.5);
+                background-color: darkolivegreen;
+            }
+            50%{
+                transform: scale(1.5);
+                background-color:rgb(168, 227, 66) ;
+            }
+            100%{
+                transform: scale(0.5);
+                background-color: darkolivegreen;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="e">
+    <div class="e1"></div>
+    <div class="e2"></div>
+    <div class="e3"></div>
+    </div>
+    <div class="a">
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+    </div>
+</body>
+</html>
