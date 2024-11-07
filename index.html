@@ -15,7 +15,7 @@
             background-color: blue;
             border-radius: 20px;
             margin-left:  30px;
-            margin-top: 20%;
+            margin-top: 10%;
             animation: move 5s infinite;
         }
         .e1{
@@ -50,6 +50,36 @@
             animation-delay: 3s;
         }
 
+        /* task-2 */
+        .transforms,img{
+            align-items: center;
+            margin-top: 1%; 
+            text-align: center; 
+        }
+        img{
+         margin-top: 5%; 
+        }
+        .b1:hover ~ img{
+        border: 2px solid rgba(128, 0, 128, 0.9);
+        }
+        .b2:hover~img{
+            transform: translate(100px,0px)
+        }
+        .b3:hover~img{
+            transform: scale(1.5);
+        }
+        .b4:hover~img{
+            transform: rotate(300deg);
+        }
+        .b5:hover~img{
+            transform: skew(10deg,20deg);
+        }
+
+
+
+
+
+
         @keyframes move {
             0%{
                 transform: translate(0px,-100px);
@@ -80,6 +110,7 @@
     </style>
 </head>
 <body>
+    <h1>Task-1</h1>
     <div class="e">
     <div class="e1"></div>
     <div class="e2"></div>
@@ -90,5 +121,18 @@
         <div class="a2"></div>
         <div class="a3"></div>
     </div>
+
+<!-- task-2 -->
+ <h1>Task-2</h1>
+<div class="transforms">
+    <button class="b1">Border</button>
+    <button class="b2">Translate</button>
+    <button class="b3">Scale</button>
+    <button class="b4">Rotate</button>
+    <button class="b5">Skewing</button>
+    <br><br>
+    <img src="https://img.freepik.com/free-vector/cute-rabbit-holding-carrot-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-5071.jpg" width="150px" height="150px">
+    </div>
+
 </body>
 </html>
